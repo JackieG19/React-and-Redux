@@ -18,7 +18,7 @@
 
 #9 - Intro to Form
 
-#10 - Create React App (_note:_ terminal toggle to search for treminal)
+#10 - Create React App (_note:_ terminal toggle to search for terminal)
 
 #11 - Single page apps (_note:_ in commit on Aug 21, 2018)
 

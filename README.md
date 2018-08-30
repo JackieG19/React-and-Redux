@@ -44,7 +44,7 @@
 
 #22 - Lifecycle Method
 
-#23
+#23 - Todo App (part 1)
 
 #24
 

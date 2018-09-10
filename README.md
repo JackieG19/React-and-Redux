@@ -44,19 +44,45 @@
 
 #22 - Lifecycle Method
 
-#23 - Todo App (part 1)
+#23 - Todo App (part 1 _note:_ npm start to open app)
 
-#24
+#24 - Todo App (part 2)
 
-#25
+#25 - The React Router (_note:_ in commit)
 
-#26
+#26 - Links & NavLinks (_note:_ in commit)
 
-#27
+#27 - Programmatic Redirects
 
-#28
+#28 - Higher Order Components
 
-#29
+#29 - Using Axios
+
+#30
+
+#31
+
+#32
+
+#33
+
+#34
+
+#35
+
+#36
+
+#37
+
+#38
+
+#39
+
+#40
+
+#41
+
+#42
 
 
 Youtube - The Net Ninja

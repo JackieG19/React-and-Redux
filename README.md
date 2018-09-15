@@ -14,12 +14,8 @@ Just checkout the branch / lesson that you need.
 
 Be sure to run an 'npm install' to install any dependencies.
 
-----
-
 ## React-Redux-Complete
 - TodoApp
 - Poketimes
-
----
 
 ## Redux Basic

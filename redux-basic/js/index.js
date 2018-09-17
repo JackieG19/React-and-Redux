@@ -8,6 +8,7 @@ const initState = {
 function myreducer(state = initState, action){
   if (action.type == 'ADD_TODO') {
     return {
+      ...state,
       todos: [...state.todos, action.todo]
     }
   }
@@ -30,5 +31,6 @@ store.dispatch(todoAction)
 // "state updated"
 
 // Object {
+//   post: [],
 //   todos: ["buy milk"]
 // }

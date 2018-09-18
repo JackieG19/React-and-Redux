@@ -8,13 +8,48 @@ const initState = {
 function myreducer(state = initState, action){
   if (action.type == 'ADD_TODO') {
     return {
-      todos: [...state.todos, action]
+      ...state,
+      todos: [...state.todos, action.todo]
+    }
+  }
+
+  if (action.type == 'ADD_POST') {
+    return {
+      ...state,
+      posts: [...state.posts, action.post]
     }
   }
 }
 
 const store = createStore(myreducer);
 
-const todoAction = { type: 'ADD_TODO', todo: 'buy milk' };
+store.subscribe(() => {
+  console.log('state updated');
+  console.log(store.getState());
+})
 
-store.dispatch(todoAction)
+store.dispatch({type: 'ADD_TODO', todo: 'buy milk'});
+store.dispatch({type: 'ADD_TODO', todo: 'sleep some more'});
+store.dispatch({type: 'ADD_POST', post: 'egg hunt with yoshi'});
+
+// Console
+
+// - add todos
+// Object {
+//   posts: [],
+//   todos: ["buy milk"]
+// }
+
+// - update todos
+// Object {
+//   posts: [],
+//   todos: ["buy milk", "sleep some more"]
+// }
+
+// - post add
+// Object {
+//   posts: ["egg hunt with yoshi"],
+//   todos: ["buy milk", "sleep some more"]
+// }
+
+

@@ -3,9 +3,9 @@ import { connect } from 'react-redux'
 
 class Post extends Component {
     render() {
-        //console.log(this.props)
         handleClick = () => {
             this.props.deletePost(this.props.post.id);
+            this.props.history.push('/')
         }
         const post = this.props.post ? (
             <div className="post"> 
@@ -41,7 +41,5 @@ const mapStateToProps = (dispatch) => {
         deletePost: (id) => { dipatch({type: 'DELETE_POST', id: id }) }
     }
 }
-
-// store.dispatch({type})
 
 export default connect(mapStateToProps)(Post)

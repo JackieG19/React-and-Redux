@@ -1,6 +1,4 @@
-# React and Redux Tutorial
-
-All the course files for the Net Ninja React tutorial on YouTube.
+# Working on React and Redux 
 
 ## React Playlist
 

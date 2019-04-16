@@ -15,8 +15,26 @@
             <!-- React stuff goes here -->
          <div id="app"></div>
         </div>
+        
         <script src="/app/bundle.js"></script>
+        
         <script type="text/babel">
+
+        // creating a component to take control of the div id app
+        // using javascript class-based component 
+        
+            // have acess to this React object because of adding the 3rd script tag above
+            class App extends React.Component{ 
+                
+                // the render method is responsible for showing the template to the element you want to render 
+                render(){ 
+                
+                    // return a value of JSX template
+                    return{ 
+                    
+                        // generally always be one root element
+                        <div className="app-content"> 
+
            class App extends React.Component{
                 state = {
                     name: 'Ryu',
@@ -38,6 +56,7 @@
                 render(){
                     return{
                         <div className="app-content">
+
                             <hi>Hey, ninjas</h1>
                             <p>My name is: { this.state.name } and I am { this.state.age }</p>
                             <button onClick={this.handleClick}>Click me</button>
